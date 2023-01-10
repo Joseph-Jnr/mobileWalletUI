@@ -285,7 +285,7 @@
     font-size: 20px;
 }
 
-.bottom-nav .single:nth-child(1) i:nth-child(2) {
+.bottom-nav .single:nth-child(1) a:nth-child(2) i {
     color: var(--blue);
 }
 
