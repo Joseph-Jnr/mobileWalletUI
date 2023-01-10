@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="balance-section">
+        <div class="container">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-graph-up-arrow text-white"></i> Mutual Fund
+                </button>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-white" href="#">Single Fund</a></li>
+                </ul>
+            </div>
+            <div class="balance-amt mt-3">
+                <small>Your Amount</small>
+                <h2><i class="bi bi-currency-rupee"></i>80,455.00</h2>
+                <div class="extra-amt d-flex justify-content-start align-items-center">
+                    <div class="col-lg-5 single-extra">
+                        <div class="title">Invested</div>
+                        <h5><i class="bi bi-currency-rupee"></i>56,445.00</h5>
+                    </div>
+                    <div class="col-lg-7 single-extra">
+                        <div class="title">Returns</div>
+                        <h5><i class="bi bi-currency-rupee"></i>14,111.18 <span>(+ 19.6%)</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <div class="sip-wrap">
+            <div class="sip-top d-flex justify-content-between align-items-center">
+                <div class="left">
+                    <div class="child">
+                        <div class="title">Total SIP</div>
+                        <h4><i class="bi bi-currency-rupee"></i>7,500.00</h4>
+                    </div>
+                    <div class="child">
+                        <div class="title">Next SIP: 23</div>
+                        <p>SIP of <i class="bi bi-currency-rupee"></i>3,500.00</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="controls-calendar-monthview (1).png" alt="" width="145" height="auto" class="img-fluid">
+                </div>
+            </div>
+            <div class="sip-bottom d-flex justify-content-between align-items-center">
+                <p>Due Today: SIP Of 2,000</p>
+                <button class="btn btn-custom btn-sm">Pay Now</button>
+            </div>
+        </div>
+
+        <div class="invest-area">
+            <div class="header d-flex justify-content-between align-items-center">
+                <h5>Investment Ideas</h5>
+                <span>view more</span>
+            </div>
+            <div class="invest-body">
+                <div class="single">
+                    <div class="top">
+                        <div class="header d-flex justify-content-start align-items-center">
+                            <img src="toppng.com-flower-bouquet-chess-2017-clip-art-white-small-flowers-1214x1590.png" class="img-fluid" alt="">
+                            <p>Smart Savings</p>
+                        </div>
+                        <div class="body">
+                            <p>earn more than traditional saving method</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>🤲🏽 Double hustle my gee</p>
+                    </div>
+                </div>
+                <div class="single">
+                    <div class="top">
+                        <div class="header d-flex justify-content-start align-items-center">
+                            <img src="toppng.com-flower-bouquet-chess-2017-clip-art-white-small-flowers-1214x1590.png" class="img-fluid" alt="">
+                            <p>Beginner's Kit</p>
+                        </div>
+                        <div class="body">
+                            <p>one investment for all market conditions</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>💪🏽 You fit run am sharp!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bottom-nav">
+        <div class="btn-wrap">
+            <div class="btn-outer">
+                <div class="plus-button"><i class="bi bi-plus-lg"></i></div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <div class="single">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-coins"></i>
+            </div>
+            <div class="single">
+                <i class="fa-solid fa-file-lines"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
