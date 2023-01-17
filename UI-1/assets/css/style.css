@@ -218,6 +218,75 @@
     font-size: 12px;
 }
 
+
+
+.transactions-area .header {
+    margin: 20px 0px;
+}
+
+.transactions-area .header h5 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #555354;
+}
+
+.transactions-area .header span {
+    color: rgb(184, 89, 89);
+    font-size: 14px;
+}
+
+.single-tnx {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.single-tnx .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.single-tnx .icon.credit {
+    background: rgb(33, 224, 138);
+}
+
+.single-tnx .icon.debit {
+    background: rgb(231, 68, 79);
+}
+
+.single-tnx .desc p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: -2px;
+}
+
+.single-tnx .desc span {
+    font-size: 12px;
+    color: #B6B6B6;
+}
+
+.single-tnx .tnx-right span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.single-tnx .tnx-right span.credit {
+    color: rgb(33, 224, 138);
+}
+
+.single-tnx .tnx-right span.debit {
+    color: rgb(231, 68, 79);
+}
+
+
+
 .bottom-nav {
     background: #fff;
     position: fixed;
