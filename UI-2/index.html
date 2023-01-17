@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet UI 2</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="top-area d-flex">
+                <div class="top-col"><a href="#"><i class="bi bi-chevron-left"></i></a></div>
+                <div class="top-col text-center"><h5>Invest</h5></div>
+            </div>
+            <p>How much do you want to <br> invest today?</p>
+            
+        </div>
+    </div>
+    <section class="main-body">
+        <div class="container">
+            <form action="index2.html">
+                <div class="input-area">
+                    <span>How much?</span>
+                    <div class="input-group">
+                        <input class="priceInput" type="text" value="$ 50">
+                        <span><i class="bi bi-bar-chart-fill text-white"></i></span>
+                    </div>
+                </div>
+                <p>Select your credit</p>
+                
+                <div class="prices mb-3">
+                    <div class="price-list text-center">
+                        <label class="single-radio">
+                            <input type="radio" class="radio-input" name="options">
+                            <div class="btn-custom-white amount" data-value="5"><div><span>$</span>5</div></div>
+                        </label>
+                        <label class="single-radio">
+                            <input type="radio" class="radio-input" name="options">
+                            <div class="btn-custom-white amount" data-value="10"><div><span>$</span>10</div></div>
+                        </label>
+                        <label class="single-radio">
+                            <input type="radio" class="radio-input" name="options">
+                            <div class="btn-custom-white amount" data-value="15"><div><span>$</span>15</div></div>
+                        </label>
+                        <label class="single-radio">
+                            <input type="radio" class="radio-input" name="options">
+                            <div class="btn-custom-white amount" data-value="20"><div><span>$</span>20</div></div>
+                        </label>
+                        <label class="single-radio">
+                            <input type="radio" class="radio-input" name="options" checked>
+                            <div class="btn-custom-white amount" data-value="50"><div><span>$</span>50</div></div>
+                        </label>
+                        <label class="single-radio">
+                            <input type="radio" class="radio-input" name="options">
+                            <div class="btn-custom-white amount" data-value="100"><div><span>$</span>100</div></div>
+                        </label>
+                        <label class="single-radio">
+                            <input type="radio" class="radio-input" name="options">
+                            <div class="btn-custom-white amount" data-value="200"><div><span>$</span>200</div></div>
+                        </label>
+                        <label class="single-radio">
+                            <input type="radio" class="radio-input" name="options">
+                            <div class="btn-custom-white amount" data-value="500"><div><span>$</span>500</div></div>
+                        </label>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-custom-purple w-100 mt-3" value="Buy">
+            </form>
+        </div>
+    </section>
+
+    <script>
+        var priceInput = document.querySelector(".priceInput")
+        var amounts = document.querySelectorAll(".amount")
+        //var radioInput = amounts.getAttribute("data-value")
+        amounts.forEach(amount => {
+            amount.addEventListener('click', () => {
+                priceInput.value = "$ " + amount.dataset.value;
+            })
+        });
+    </script>
+</body>
+</html>
