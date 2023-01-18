@@ -113,6 +113,7 @@
     border-radius: 10px !important;
     color: rgb(213, 213, 213);
     box-shadow: 2px 2px 11px 1px rgba(98, 98, 98, 0.28);
+    height: 50px;
 }
 
 .single-radio input[type="radio"] {
