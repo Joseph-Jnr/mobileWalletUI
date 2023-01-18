@@ -63,8 +63,11 @@ main {
     text-align: center;
 }
 
-.mobile-side-nav .side-nav-links li {
+.mobile-side-nav .side-nav-links li:not(:last-child) {
     padding: 10px;
+    background: rgba(224, 224, 224, 0.535);
+    border-radius: 80px;
+    margin-bottom: 15px;
 }
 
 .mobile-side-nav .side-nav-links li.active {
@@ -77,7 +80,8 @@ main {
 }
 
 .mobile-side-nav .side-nav-links li:last-child a {
-    color: var(--custom-purple);
+    color: #7b1093;
+    font-weight: 500;
 }
 
 .mobile-side-nav .side-nav-links li a {
