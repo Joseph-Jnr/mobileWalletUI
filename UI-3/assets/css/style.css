@@ -65,7 +65,6 @@ main {
 
 .mobile-side-nav .side-nav-links li:not(:last-child) {
     padding: 10px;
-    background: rgba(224, 224, 224, 0.535);
     border-radius: 80px;
     margin-bottom: 15px;
 }
