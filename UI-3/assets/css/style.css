@@ -247,7 +247,13 @@ header {
     color: #fff;
 }
 
+header .icon {
+    display: inline-block;
+    float: left;
+}
+
 header .acct {
+    display: inline-block;
     font-weight: 700;
     font-size: 14px;
 }
